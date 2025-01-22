@@ -17,10 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import start_str, StartList
+from task3.views import start_menu, game_catalog, shopping_cart
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('str/', StartList.as_view()),
     path('', start_str),
+    path('main/', start_menu),
+    path('main/games/', game_catalog),
+    path('main/cart/', shopping_cart)
 ]
