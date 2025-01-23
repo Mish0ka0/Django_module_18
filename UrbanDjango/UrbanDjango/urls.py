@@ -19,13 +19,16 @@ from django.urls import path
 from task2.views import start_str, StartList
 # from task3.views import start_menu, game_catalog, shopping_cart
 from task4.views import start_menu, game_catalog, shopping_cart
+from task5.views import sign_up_by_html, sign_up_by_django
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('str/', StartList.as_view()),
-    path('', start_str),
+    #path('', start_str),
     path('main/', start_menu),
     path('main/games/', game_catalog),
-    path('main/cart/', shopping_cart)
+    path('main/cart/', shopping_cart),
+    path('', sign_up_by_html),
+    path('django_sign_up/', sign_up_by_django)
 ]
