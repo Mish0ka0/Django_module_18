@@ -17,7 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import start_str, StartList
-from task3.views import start_menu, game_catalog, shopping_cart
+# from task3.views import start_menu, game_catalog, shopping_cart
+from task4.views import start_menu, game_catalog, shopping_cart
 
 
 urlpatterns = [
